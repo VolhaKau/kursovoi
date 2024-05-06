@@ -35,7 +35,7 @@
     max-width: 600px;
     background-color: none;
     padding: 20px;
-    margin: 0 auto; /* Добавьте это свойство */
+    margin: 0 auto; 
   }
   
   .blue{
@@ -48,7 +48,7 @@
   }
   
   a {
-    color: #0084ff; /* Замените #FF0000 на желаемый цвет */
+    color: #0084ff; 
     text-decoration: none;
   }
   a:hover {
@@ -57,10 +57,10 @@
   .content-container::after {
     content: "";
     display: block;
-    height: 8vh; /* Высота блока равна 100% высоты окна просмотра */
+    height: 8vh; 
   }
   .content-container::before {
     content: "";
     display: block;
-    height: 8vh; /* Высота блока равна 100% высоты окна просмотра */
+    height: 8vh; 
   }
