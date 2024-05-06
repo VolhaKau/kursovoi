@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>акции/купоны</title>
+    <link rel="stylesheet" href="общее.css" media="screen">
+    <link rel="stylesheet" href="купоны.css" media="screen">
+   </head>
+  <body>
+   <header class="header">
+      <div class="sheet sheet-1">
+         <img class="image-contain image-default image-1" src="logobest2.svg">
+         <p class="log text-block text-1"><a href="главная.html" style="text-decoration: none; color: black !important;">Мара</a></p>
+         <nav class="menu men1">
+            <div>
+               <ul class="nav">
+                  <li class="nav-item"><a class="nav-link" href="главная.html" style="padding: 10px 20px;">ГЛАВНАЯ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="на беларускай.html" style="padding: 10px 20px;">НА БЕЛАРУСКАЙ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="ошибка.html" style="padding: 10px 20px;">НА РУССКОМ</a></li>
+                  <li class="nav-item"><a class="nav-link" href="купоны.html" style="padding: 10px 20px;">АКЦИИ/КУПОНЫ</a></li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <span class="reg-icon icon icon-1">
+         <a href="регистрация.html"><svg width="65px" height="65px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <title>i</title>
+            <g id="Complete">
+              <g id="user-add">
+                <g>
+                  <path d="M17,21V19a4,4,0,0,0-4-4H5a4,4,0,0,0-4,4v2" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <circle cx="9" cy="7" r="4" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <line x1="17" y1="11" x2="23" y2="11" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                  <line x1="20" y1="8" x2="20" y2="14" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                </g>
+              </g>
+            </g>
+          </svg></a>
+      </span>
+   </header>
+   <section class="content-container">
+   </section>
+ <div class="container">
+ <h1>Подпишитесь на наш GitHub и получите скидку 10% на все курсы!</h1>
+  <p>Перейдите по ссылке, чтобы подписаться на наш GitHub:</p>
+  <a class="blue" href="https://github.com/VolhaKau" target="_blank">Подписаться на GitHub</a>
+  
+  <h1>Следите за нами в Instagram и получите купон на бесплатный доступ к одному из наших курсов!</h1>
+  <p>Перейдите по ссылке, чтобы подписаться на наш Instagram:</p>
+  <a class="blue" href="https://www.instagram.com/belstu.official/" target="_blank">Подписаться на Instagram</a>
+  
+  <h3>Активация купона</h3>
+  <p>После подписки на GitHub или Instagram, вам будет предоставлен уникальный промокод или ссылка для активации купона. Введите его ниже:</p>
+  <form>
+    <input type="text" id="coupon-code" placeholder="Введите промокод или ссылку">
+    <button type="submit" class="get-button one">Активировать</button>
+  </form>
+</div>
+ <script>
+   var button = document.querySelector('.get-button.one');
+   button.addEventListener('click', function() {
+      event.preventDefault();
+     button.textContent = 'Приобретено';
+   });
+ </script>
+ <section class="content-container">
+</section>
+ <footer class="footer">       
+   <div class="sheet layout-cell ">          
+      <div>                
+         <div class="position-1">
+           <h5>+375 44 5882224<br>
+               maraknigi@gmail.com
+            </h5>
+            <div>
+               <br>г. Минск, ул. Белорусская 21<br>&#169; Мара<br>
+            </div>
+         </div>
+      </div>
+   </div> 
+</footer>
+</body></html>

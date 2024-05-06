@@ -1,0 +1,66 @@
+  form {
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #8ec9ff;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  @font-face {
+    font-family: 'Exo2';
+    src: url('fonts/Exo2Regular.ttf');
+  }
+  #discount-info {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  .container {
+    width: 75%;
+    max-width: 600px;
+    background-color: none;
+    padding: 20px;
+    margin: 0 auto; /* Добавьте это свойство */
+  }
+  
+  .blue{
+    font-family: 'Exo2';
+    margin-bottom: 0;
+    font-weight: italic;
+    font-variant: small-caps;
+    color: #0084ff;
+    font-size: 30px;
+  }
+  
+  a {
+    color: #0084ff; /* Замените #FF0000 на желаемый цвет */
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .content-container::after {
+    content: "";
+    display: block;
+    height: 8vh; /* Высота блока равна 100% высоты окна просмотра */
+  }
+  .content-container::before {
+    content: "";
+    display: block;
+    height: 8vh; /* Высота блока равна 100% высоты окна просмотра */
+  }
