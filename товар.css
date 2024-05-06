@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 66.67%; /* Пример: соотношение сторон 3:2 */
+  margin-bottom: 20px;
+}
+
+.slider-images img {
+  position: absolute;
+  padding-top: 20px; /* Отступ сверху */
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slider-images img:nth-child(2) {
+  opacity: 0;
+}
+
+.slider-images:hover img:nth-child(1) {
+  opacity: 0;
+}
+
+.slider-images:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  margin-top: 10px; /* Измените отступ сверху по вашему усмотрению */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.clearfix.sheet.sheet-1 {
+  display: flex;
+  align-items: flex-start; /* Выравнивание элементов по верхнему краю */
+  gap: 15%; /* Расстояние между элементами */
+}
+
+.slider-container {
+  flex: 1; /* Занимает всю доступную ширину в первой колонке */
+}
+
+.information {
+  flex: 1; /* Занимает всю доступную ширину во второй колонке */
+}
+
+.slider-images {
+  display: flex;
+  flex-direction: column; /* Устанавливаем столбцовую ориентацию для картинок */
+  margin-left: 5%;
+  box-sizing: border-box;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.slider-images img {
+  margin-bottom: 10px; /* Отступ между картинками */
+}
+
+.page-content {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+section {
+  width: 75%;
+  margin: 0 auto; /* Центрирование блока по горизонтали */
+}
+
+.content-container::before {
+  content: "";
+  display: block;
+  height: 10vh; /* Высота блока равна 100% высоты окна просмотра */
+}
