@@ -225,7 +225,7 @@ a.nav-link:hover {
 }
 body {
     min-height: 100vh;
-    background-image: url("картинки/фон.jpg"), none;
+    background-image: src="картинки/фон.jpg", none;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
