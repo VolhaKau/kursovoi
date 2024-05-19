@@ -4,27 +4,28 @@
     clear: both;
   }
 
-  .slider-container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 66.67%; /* Пример: соотношение сторон 3:2 */
-    margin-bottom: 20px;
-  }
+ .section-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .sheet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .slider-container {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
   
-  .slider-images img {
-    position: absolute;
-    padding-top: 20px; /* Отступ сверху */
-    position: absolute;
-    object-fit: cover;
-    object-position: center;
-    max-width: 100%;
-    height: auto;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .slider-images img:nth-child(2) {
-    opacity: 0;
-  }
+ .slider-images {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
 
   .slider-images:hover img:nth-child(1) {
     opacity: 0;
@@ -67,9 +68,20 @@
     flex: 1; /* Занимает всю доступную ширину в первой колонке */
   }
   
-  .information {
-    flex: 1; /* Занимает всю доступную ширину во второй колонке */
+ .information {
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+
+      .book-info {
+        button {
+          margin-top: 20px;
+        }
+      }
+    }
   }
+}
+
   
   .slider-images {
     display: flex;
