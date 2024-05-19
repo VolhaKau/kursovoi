@@ -4,33 +4,29 @@
     clear: both;
   }
 
- .section-1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  .sheet {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .slider-container {
-      width: 100%;
-      max-width: 500px;
-      margin-bottom: 20px;
+  .slider-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 66.67%; /* Пример: соотношение сторон 3:2 */
+    margin-bottom: 20px;
+  }
   
- .slider-images {
-        img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-
+  .slider-images img {
+    position: absolute;
+    padding-top: 20px; 
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .slider-images img:nth-child(2) {
+    opacity: 0;
+  }
   .slider-images:hover img:nth-child(1) {
     opacity: 0;
   }
-  
   .slider-images:hover img:nth-child(2) {
     opacity: 1;
   }
@@ -46,7 +42,7 @@
   }
 
   button {
-    margin-top: 10px; /* Измените отступ сверху по вашему усмотрению */
+    margin-top: 10px; 
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -68,20 +64,9 @@
     flex: 1; /* Занимает всю доступную ширину в первой колонке */
   }
   
- .information {
-      width: 100%;
-      max-width: 500px;
-      text-align: center;
-
-      .book-info {
-        button {
-          margin-top: 20px;
-        }
-      }
-    }
+  .information {
+    flex: 1; /* Занимает всю доступную ширину во второй колонке */
   }
-}
-
   
   .slider-images {
     display: flex;
@@ -109,22 +94,3 @@
     display: block;
     height: 10vh; /* Высота блока равна 100% высоты окна просмотра */
   }
-
-@media (min-width: 768px) {
-  .section-1 {
-    .sheet {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-
-      .slider-container {
-        margin-bottom: 0;
-        margin-right: 20px;
-      }
-
-      .information {
-        text-align: left;
-      }
-    }
-  }
-}
