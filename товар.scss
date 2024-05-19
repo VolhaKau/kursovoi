@@ -97,3 +97,22 @@
     display: block;
     height: 10vh; /* Высота блока равна 100% высоты окна просмотра */
   }
+
+@media (min-width: 768px) {
+  .section-1 {
+    .sheet {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .slider-container {
+        margin-bottom: 0;
+        margin-right: 20px;
+      }
+
+      .information {
+        text-align: left;
+      }
+    }
+  }
+}
