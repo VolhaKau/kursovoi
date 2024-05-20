@@ -246,23 +246,15 @@
 .link.border-2 {
 	border-width: 0 0 2px 0;
 }
-.border-blue-25 {
-	border-color: #8ec9ff;
-	stroke: #8ec9ff;
+.button-style:hover,
+    .button-style:focus {
+        border-style:groove !important;
+        border-radius: 15px;
+        color: #001442 !important;
+        background-color: #8ec9ff  !important;
+    }
+a.button-style{
+    color: #111111 !important;
+    border-color: #8ec9ff;
+    stroke: #8ec9ff;
 }
-.button-style.border-blue-25 {
-	border-color: #8ec9ff !important;
-	color: #8ec9ff !important;
-	background-color: transparent !important;
-}
-.button-style.border-blue-25:hover, .button-style.border-blue-25:focus {
-	border-color: rgb(0, 153, 255) !important;
-	color: rgb(0, 0, 0) !important;
-}
-a.button-style.color {
-	color: rgb(0, 0, 0) !important;
-}
-.color-2 {
-	color: rgb(0, 153, 255) !important;
-}
-
