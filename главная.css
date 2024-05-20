@@ -155,7 +155,7 @@
     .section-2 .image-2.image-2.image-2:hover,
     .section-2 .image-3.image-3.image-3:hover,
     .section-2 .image-4.image-4.image-4:hover {
-        transform: scale(1.15) !important;
+        transform: scale(1.08) !important;
     }
 .section-3 .sheet-1 {
     min-height: 548px;
@@ -292,7 +292,7 @@
 .section-3 .image-2.image-2.image-2:hover,
 .section-3 .image-3.image-3.image-3:hover,
 .section-3 .image-4.image-4.image-4:hover {
-    transform: scale(1.15) !important;
+    transform: scale(1.08) !important;
 }
 .section-3 .container-layout:hover .image-1,
 .section-3 .container-layout:hover .image-2,
