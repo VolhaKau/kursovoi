@@ -392,11 +392,7 @@
 {
     transform: scale(1.15) !important;
 }
- .ss:hover
-{
-    transform: scale(1.15) !important;
-    color: purple;
-}
+
 .aa:hover{
  color: blueviolet;
 }
