@@ -54,3 +54,8 @@
     margin: 45px auto 60px auto !important; /* Изменены значения margin-left и margin-right на auto */
   }
 }
+.content-container::before {
+content: "";
+display: block;
+height: 60vh; /* Высота блока равна 100% высоты окна просмотра */
+}
