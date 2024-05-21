@@ -30,32 +30,27 @@
 }
 
 .image-1 {
-    width: 623px;
-    height: 485px;
-    margin: 45px 218px 60px auto ;
+  width: 623px;
+  height: 485px;
+  margin: 45px auto 60px auto; /* Изменено значение margin-left на auto */
 }
 
 @media (max-width: 1199px) {
-    .section-2 .image-1 {
-        margin-right: 122px;
-    }
+  .section-2 .image-1 {
+    margin-right: auto; /* Изменено значение margin-right на auto */
+  }
 }
 
 @media (max-width: 991px) {
-    .section-2 .image-1 {
-        margin-right: -9px;
-    }
+  .section-2 .image-1 {
+    margin-right: auto; /* Изменено значение margin-right на auto */
+  }
 }
 
 @media (max-width: 575px) {
-    .section-2 .image-1 {
-        width: 340px;
-        height: 264px;
-        margin-left: 30px !important;
-    }
-}
-  .content-container::before {
-    content: "";
-    display: block;
-    height: 60vh; /* Высота блока равна 100% высоты окна просмотра */
+  .section-2 .image-1 {
+    width: 340px;
+    height: 264px;
+    margin: 45px auto 60px auto !important; /* Изменены значения margin-left и margin-right на auto */
   }
+}
